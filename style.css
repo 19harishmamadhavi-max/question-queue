@@ -1,0 +1,92 @@
+/* Colors used throughout the page. */
+:root {
+  --color-page: #f1f7f5;
+  --color-surface: #ffffff;
+  --color-text: #263a35;
+  --color-border: #cbd9d4;
+  --color-primary: #087f6e;
+  --color-primary-hover: #066356;
+  --color-secondary: #3e6f9e;
+  --color-secondary-hover: #325a80;
+}
+
+/* Keep the content centered and easy to read. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--color-page);
+  color: var(--color-text);
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--color-surface);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: var(--color-primary);
+}
+
+button:first-of-type:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button:last-of-type {
+  background-color: var(--color-secondary);
+}
+
+button:last-of-type:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+/* Leave a clear area where saved questions can appear. */
+#question-list {
+  min-height: 80px;
+  margin: 16px 0 0;
+  padding: 12px;
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  list-style: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    margin: 16px auto;
+    padding: 16px;
+  }
+}
