@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page information used by the browser. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Queue</title>
+</head>
+<body>
+  <h1>Question Queue</h1>
+
+  <!-- Enter a question and choose how to organize it. -->
+  <label for="question">Your question:</label>
+  <input type="text" id="question" name="question">
+
+  <label for="tag">Tag:</label>
+  <select id="tag" name="tag">
+    <option value="HTML">HTML</option>
+    <option value="Python">Python</option>
+    <option value="Git">Git</option>
+    <option value="Jobs">Jobs</option>
+  </select>
+
+  <label for="priority">Priority:</label>
+  <select id="priority" name="priority">
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+
+  <button type="button">Add</button>
+
+  <!-- Saved questions will appear in this list later. -->
+  <ul id="question-list"></ul>
+
+  <button type="button">Copy as one prompt</button>
+</body>
+</html>
