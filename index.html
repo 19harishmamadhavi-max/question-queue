@@ -29,11 +29,13 @@
     <option value="Low">Low</option>
   </select>
 
-  <button type="button">Add</button>
+  <button type="button" id="add-button">Add</button>
 
   <!-- Saved questions will appear in this list later. -->
   <ul id="question-list"></ul>
 
-  <button type="button">Copy as one prompt</button>
+  <button type="button" id="copy-button">Copy as one prompt</button>
+  <p id="copy-message" role="status" aria-live="polite" hidden></p>
+  <script src="script.js"></script>
 </body>
 </html>
